@@ -8,7 +8,7 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -25,9 +25,7 @@
     </div>
 
     <div id="Current"></div>
-    <div id="main">
-        <div id="rest"> </div>
-    </div>
+
 
 
     <script>
@@ -53,13 +51,14 @@
                      
                                               
                     <h1 id="Fajr"></h1>
-                    <h3 id ="Dhuhr"></h3> 
+                    
+                    <h1 id ="Dhuhr"></h1> 
                   
-                    <h3 id="Asr"></h1>
+                    <h1 id="Asr"></h1>
                    
-                    <br />
-                    <h3 id="Maghrib"></h1>
-                    <h3 id="Isha"></h1>
+                    
+                    <h1 id="Maghrib"></h1>
+                    <h1 id="Isha"></h1>
               
                 </div>`
 
@@ -68,20 +67,20 @@
                     console.log(response.data);
 
                     document.querySelector("#Fajr").innerHTML =
-                        `${response.data[0].timings.Fajr}`;
+                        ` Fajr <br /><br />${response.data.data[0].timings.Fajr}`;
 
                     document.querySelector("#Dhuhr").innerHTML =
-                        `${response.data[0].timings.Dhuhr}`;
+                        `Dhuhr <br /><br />${response.data.data[0].timings.Dhuhr}`;
 
                     document.querySelector("#Asr").innerHTML =
-                        `${response.data[0].timings.Asr} `;
+                        `Asr <br /><br />${response.data.data[0].timings.Asr} `;
 
 
                     document.querySelector("#Maghrib").innerHTML =
-                        `${response.data[0].timings.Mighrib}`;
+                        `Maghrib <br /><br />${response.data.data[0].timings.Maghrib}`;
 
                     document.querySelector("#Isha").innerHTML =
-                        `${response.data[0].timings.Isha}`;
+                        `Isha <br /><br />${response.data.data[0].timings.Isha}`;
 
                 })
                 .catch(function(error) {

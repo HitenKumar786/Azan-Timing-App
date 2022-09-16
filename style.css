@@ -1,0 +1,94 @@
+body {
+    background-image: url(madina.jpg);
+    background-size: 1370px 670px;
+    background-repeat: no-repeat;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    color: white;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+}
+
+#cityName {
+    font-size: larger;
+    background: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    border: 2px solid white;
+    padding: 20px;
+    width: 400px;
+    height: 10px;
+    color: white;
+}
+
+#button {
+    background: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    border: 2px solid white;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 130px;
+    height: 50px;
+    margin-left: 150px;
+    color: white;
+}
+
+.TimingCard {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 20px;
+}
+
+#Fajr {
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+    height: 200px;
+    padding: 10px;
+}
+
+#Dhuhr {
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+    height: 200px;
+    padding: 10px;
+}
+
+#Asr {
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+    height: 200px;
+    padding: 10px;
+}
+
+#Maghrib {
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+    height: 200px;
+    padding: 10px;
+}
+
+#Isha {
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+    height: 200px;
+    padding: 10px;
+}
